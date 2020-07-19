@@ -1,0 +1,21 @@
+{
+  "generator-react-firebase": {
+    "promptValues": {
+      "githubUser": "xpsdeset",
+      "includeRedux": true,
+      "includeFirestore": false,
+      "otherFeatures": [
+        "Continuous Integration config",
+        "Firebase Cloud Messaging",
+        "Firebase Functions (with ESNext support)"
+      ],
+      "functionsTestTool": "mocha",
+      "firebaseKey": "AIzaSyAVAEddzc0AWfkI-rLBlawUBHqmBevk9eA",
+      "firebaseProjectId": "buddy247-d5530",
+      "messagingSenderId": "651505415845",
+      "appId": "1:651505415845:web:0ade27d9d2278ac2cd3f4c",
+      "firebasePublicVapidKey": "BCK1Vb1EG8yrqaRhPr8peiGJg8BpKFCGnwaOqvKM89l9zXodVD4_0JJSrbdC1WohgyfaF1cfpFl9dCqSzuKjO1o",
+      "ciProvider": "githubActions"
+    }
+  }
+}
