@@ -12,14 +12,19 @@ function NavbarC() {
   const authExists = isLoaded(auth) && !isEmpty(auth)
 
   function handleLogout() {
-    return firebase.logout()
+    return firebase.logout()("/")
+  }
+
+  function handleReports() {
+ 
+    return ("/admin")
   }
 
   return (
     <Navbar bg="light">
       <Navbar.Brand>
         <Link to="/">
-          <img src="/images/logo2.png" />
+          <img src="/images/logo2.png" alt=""/>
         </Link>
       </Navbar.Brand>
       {authExists && (
@@ -27,6 +32,7 @@ function NavbarC() {
           <Nav>
             <NavDropdown title="Admin">
               <NavDropdown.Item onClick={handleLogout}>Logout</NavDropdown.Item>
+              <NavDropdown.Item onClick={handleReports}>Reports</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

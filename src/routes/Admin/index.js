@@ -1,4 +1,5 @@
 import React from "react"
+import { UserIsNotAuthenticated } from 'utils/router'
 import { useFirebase } from "react-redux-firebase"
 import { useNotifications } from "modules/notification"
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth"
@@ -23,3 +24,5 @@ export default {
   path,
   component: Component,
 }
+
+ 

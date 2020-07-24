@@ -32,7 +32,7 @@ export const UserIsAuthenticated = connectedRouterRedirect({
     history.push(newLoc)
     dispatch({
       type: UNAUTHED_REDIRECT,
-      payload: { message: "User is not authenticated." },
+      payload: { message: "User is authenticated." },
     })
   },
 })
