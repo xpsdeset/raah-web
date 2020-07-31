@@ -14,6 +14,7 @@
     "functions:start": "yarn --cwd functions start",
     "functions:watch": "yarn --cwd functions watch",
     "functions:build": "yarn --cwd functions build",
+    "functions:deploy": "yarn --cwd functions deploy",
     "emulators": "firebase emulators:start --only firestore,database,pubsub",
     "emulators:hosting": "firebase emulators:start --only firestore,database,hosting",
     "emulators:all": "firebase emulators:start",

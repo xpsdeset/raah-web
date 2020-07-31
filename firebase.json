@@ -46,9 +46,7 @@
     ]
   },
   "functions": {
-    "predeploy": [
-      "if [ \"${CI}\" = \"true\" ]; then echo Skipping functions build since environment is CI; else npm --prefix \"$RESOURCE_DIR\" run build; fi"
-    ],
+    "predeploy": [],
     "ignore": [
       "**/.*",
       "**/*.spec.js",

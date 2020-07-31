@@ -11,7 +11,7 @@ async function triggerNotification() {
 
   for (let k in waiting) {
     let wt = (ts - waiting[k].time) / 1000
-    if (wt > 30) await waitingRef.child(k).remove()
+    if (wt > 125) await waitingRef.child(k).remove()
   }
 
   waiting = waitingRef
@@ -31,7 +31,6 @@ async function triggerNotification() {
     })
   }
 
-  console.log(tokens.map((d) => d.to).join(","))
   await expoNotify(tokens)
 
   return "done"
