@@ -1,6 +1,6 @@
 {
   // The following will hide the js and map files in the editor
   "files.exclude": {
-    "{node_modules,.eslint*,.firebaserc,.yo-rc.json,jsconfig.json,LICENSE,yarn.lock,CONTRIBUTING.md,.vscode,.gitiignore,.firebase,build}": true
+    "{.expo,node_modules,.eslint*,.firebaserc,.yo-rc.json,jsconfig.json,LICENSE,yarn.lock,CONTRIBUTING.md,.vscode,.gitiignore,.firebase,build,functions/.*,functions/node_modules,functions/json*,functions/yarn.lock,functions/dist}": true
   }
 }

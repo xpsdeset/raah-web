@@ -7,7 +7,7 @@
   },
   "emulators": {
     "database": {
-      "port": 9000
+      "port": 9005
     },
     "hosting": {
       "port": 3000
