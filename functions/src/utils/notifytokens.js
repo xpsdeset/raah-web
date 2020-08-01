@@ -19,7 +19,10 @@ async function triggerNotification() {
 
   if (!waiting) return "nothing to do after clean up"
 
-  let notifyUsers = database().ref(`users`).orderByChild("notify").equalTo(true)
+  let notifyUsers = database()
+    .ref(`users`)
+    .orderByChild("notify")
+    .equalTo("yes")
   notifyUsers = (await notifyUsers.once("value")).val()
 
   let tokens = []

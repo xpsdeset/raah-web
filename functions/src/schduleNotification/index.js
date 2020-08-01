@@ -6,7 +6,7 @@ async function schduleNotificationEvent(context) {
   return status
 }
 
-const schedule = "every 2 minutes"
+const schedule = "every 1 minutes"
 // const schedule = "every 10 seconds"
 
 export default functions.pubsub
