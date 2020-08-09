@@ -36,6 +36,11 @@
         "source": "/feedback",
         "destination": "https://forms.gle/fVD4AXtDARRK6zbC7",
         "type": 302
+      },
+      {
+        "source": "/get-android",
+        "destination": "https://play.google.com/store/apps/details?id=com.raahteam.raahtheapp",
+        "type": 302
       }
     ],
     "rewrites": [

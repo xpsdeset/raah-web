@@ -33,7 +33,11 @@ function Component() {
                     <br />
                     You can give your time to someone who wants to be heard.
                   </p>
-                  <div className="clearfix"></div>
+                  <div className="clearfix">
+                    <a href="/get-android">
+                      <img src="https://lh3.googleusercontent.com/cjsqrWQKJQp9RFO7-hJ9AfpKzbUb_Y84vXfjlP0iRHBvladwAfXih984olktDhPnFqyZ0nu9A5jvFwOEQPXzv7hr3ce3QVsLN8kQ2Ao=s0" />
+                    </a>
+                  </div>
                 </div>
                 <div className="img_panel">
                   <img src="/images/laptop_with_hand.png" />
