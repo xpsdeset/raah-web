@@ -7,7 +7,7 @@ function CoreLayout({ children, ...props }) {
   return (
     <div>
       <Navbar />
-      {children}
+      <div style={{ minHeight: "500px" }}>{children}</div>
       <Notifications />
       <Footer />
     </div>

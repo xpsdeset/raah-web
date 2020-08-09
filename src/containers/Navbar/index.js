@@ -4,9 +4,12 @@ import { Nav, Navbar, NavDropdown } from "react-bootstrap"
 import { isLoaded, isEmpty } from "react-redux-firebase"
 import { useFirebase } from "react-redux-firebase"
 import { Link } from "react-router-dom"
+import { useHistory } from "react-router-dom"
 
 function NavbarC() {
   // Get auth from redux state
+  let history = useHistory()
+
   const firebase = useFirebase()
   const auth = useSelector(({ firebase }) => firebase.auth)
   const authExists = isLoaded(auth) && !isEmpty(auth)
@@ -26,6 +29,9 @@ function NavbarC() {
         <Navbar.Collapse className="justify-content-end">
           <Nav>
             <NavDropdown title="Admin">
+              <NavDropdown.Item onClick={() => history.push("/admin/reports")}>
+                Reports
+              </NavDropdown.Item>
               <NavDropdown.Item onClick={handleLogout}>Logout</NavDropdown.Item>
             </NavDropdown>
           </Nav>

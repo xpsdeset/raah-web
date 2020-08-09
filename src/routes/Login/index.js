@@ -2,7 +2,6 @@ import React from "react"
 import { useFirebase } from "react-redux-firebase"
 import { useNotifications } from "modules/notification"
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth"
-import enhancer from "./enhancer"
 
 let path = "/login"
 
@@ -24,5 +23,5 @@ function Component() {
 
 export default {
   path,
-  component: enhancer(Component),
+  component: Component,
 }
