@@ -27,13 +27,13 @@
     "url": "git+https://github.com/xpsdeset/raah-web.git"
   },
   "engines": {
-    "node": ">=10.15.0"
+    "node": ">=12"
   },
   "author": "xpsdeset (https://github.com/xpsdeset)",
   "license": "MIT",
   "dependencies": {
     "bootstrap": "^4.5.0",
-    "firebase": "^7.14.3",
+    "firebase": "^8.4.2",
     "history": "^4.10.1",
     "lodash": "^4.17.15",
     "node-sass": "^4.14.1",

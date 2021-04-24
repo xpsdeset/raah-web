@@ -51,6 +51,7 @@
     ]
   },
   "functions": {
+    "runtime": "nodejs12",
     "predeploy": [],
     "ignore": [
       "**/.*",
