@@ -7,20 +7,21 @@
       "$uid": {
         ".read": "$uid === auth.uid || root.child('users/'+auth.uid).child('roles').hasChildren(['admin'])",
         ".write": "$uid === auth.uid || root.child('users/'+auth.uid).child('roles').hasChildren(['admin'])"
-      },
-      ".read": "root.child('users/'+auth.uid).child('roles').hasChildren(['admin'])",
-      ".write": "root.child('users/'+auth.uid).child('roles').hasChildren(['admin'])"
+      }
     },
     "waiting": {
       ".read": "auth != null",
       ".write": "auth != null"
     },
     "reports": {
-      ".write": "auth != null"
+      ".write": "auth != null",
+      ".read": "root.child('users/'+auth.uid).child('roles').hasChildren(['admin'])"
     },
     "rooms": {
-      ".read": "auth != null",
-      ".write": "auth != null"
+      "$uid": {
+        ".read": "auth != null && ($uid.contains(auth.uid) || root.child('users/'+auth.uid).child('roles').hasChildren(['admin']) )",
+        ".write": "auth != null && ($uid.contains(auth.uid) || root.child('users/'+auth.uid).child('roles').hasChildren(['admin']) )"
+      }
     }
   }
 }
