@@ -35,34 +35,126 @@
         }
       }
     }
-  }
-
-  .text_panel {
-    width: 60%;
-    float: left;
-    padding: 100px 0;
-    h2 {
-      font-size: 30px;
-      margin-bottom: 20px;
+    .img_panel {
+      width: 40%;
+      float: left;
+      position: relative;
+      padding-top: 10%;
+      img {
+        width: 30vw;
+      }
+      @media only screen and (min-width: 768px) {
+        // width: 75%;
+      }
+      @media only screen and (min-width: 576px) {
+        // width: 75%;
+        // float: right;
+        padding-top: 20% !important;
+        padding-left: 60%;
+      }
+      @media only screen and (min-width: 320px) {
+        padding-top: 0%;
+        padding-left: 60%;
+      }
     }
-    p {
-      font-size: 18px;
-      line-height: 30px;
+    .text_panel {
+      // width: 60%;
+      float: left;
+      padding: 100px 0;
+      h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 30px;
 
-      &.medium_size {
-        font-size: 20px;
-        margin: 30px 0 40px 0;
+        &.medium_size {
+          font-size: 20px;
+          margin: 30px 0 40px 0;
+        }
+      }
+      @media only screen and (min-width: 320px) {
+        padding: 100px 30px;
+      }
+      .clearfix {
+        img {
+          height: 46px;
+          @media only screen and (min-width: 576px) {
+            height: 42px !important;
+          }
+          @media only screen and (min-width: 320px) {
+            height: 30px;
+          }
+        }
+        .ios-img {
+          @media only screen and (min-width: 576px) {
+            height: 41px !important;
+          }
+          @media only screen and (min-width: 320px) {
+            height: 29px;
+          }
+        }
       }
     }
   }
-  .img_panel {
-    width: 40%;
-    float: left;
-    position: relative;
-    img {
-      width: 100%;
-    }
-  }
+
+  // .text_panel {
+  //   // width: 60%;
+  //   float: left;
+  //   padding: 100px 0;
+  //   h2 {
+  //     font-size: 30px;
+  //     margin-bottom: 20px;
+  //   }
+  //   p {
+  //     font-size: 18px;
+  //     line-height: 30px;
+
+  //     &.medium_size {
+  //       font-size: 20px;
+  //       margin: 30px 0 40px 0;
+  //     }
+  //   }
+  //   @media only screen and (min-width : 320px) {
+  //     padding: 100px 30px;
+  //   }
+  //   .clearfix{
+  //     img {
+  //       height: 46px;
+  //       @media only screen and (min-width : 576px) {
+  //         height: 42px!important;
+  //       }
+  //       @media only screen and (min-width : 320px) {
+  //         height: 30px;
+  //       }
+  //     }
+
+  //   }
+  // }
+  // .img_panel {
+  //   // width: 40%;
+  //   float: left;
+  //   position: relative;
+  //   padding-top: 10%;
+  //   img {
+  //     width: 30vw;
+  //   }
+  //   @media only screen and (min-width : 768px) {
+  //     // width: 75%;
+  //   }
+  //   @media only screen and (min-width : 576px) {
+  //     // width: 75%;
+  //     // float: right;
+  //     padding-top: 20% !important;
+  //     padding-left: 60%;
+  //   }
+  //   @media only screen and (min-width : 320px) {
+  //     padding-top: 0%;
+  //     padding-left: 60%;
+  //   }
+
+  // }
   .down_arrow {
     position: absolute;
     bottom: 30px;
@@ -86,11 +178,44 @@
         display: inline-block;
       }
     }
+    // .text_panel {
+    //   width: 100%;
+    //   height: auto;
+    //   padding-bottom: 0;
+    //   float: none;
+    // }
     .text_panel {
-      width: 100%;
-      height: auto;
-      padding-bottom: 0;
-      float: none;
+      // width: 60%;
+      float: left;
+      padding: 100px 0;
+      h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 30px;
+
+        &.medium_size {
+          font-size: 20px;
+          margin: 30px 0 40px 0;
+        }
+      }
+      @media only screen and (min-width: 320px) {
+        padding: 100px 30px 0px;
+        margin-bottom: 45%;
+      }
+      .clearfix {
+        img {
+          height: 46px;
+          @media only screen and (min-width: 576px) {
+            height: 42px !important;
+          }
+          @media only screen and (min-width: 320px) {
+            height: 30px;
+          }
+        }
+      }
     }
     .img_panel {
       position: absolute;
@@ -99,15 +224,30 @@
       img {
         position: relative;
         width: 100%;
+        @media only screen and (min-width: 576px) {
+          width: 90% !important;
+          margin-left: 0% !important;
+        }
+        @media only screen and (min-width: 320px) {
+          width: 80%;
+          margin-left: 46%;
+        }
+      }
+      @media only screen and (min-width: 768px) {
+        width: 75% !important;
+        margin-left: 11%;
+      }
+      @media only screen and (min-width: 576px) {
+        width: 75% !important;
       }
     }
     .features {
-      padding-top: 120px;
+      padding-top: 100px;
 
       .thumbnail_with_info {
         text-align: center;
         margin-bottom: 50px;
-        padding: 0 40px;
+        // padding: 0 40px;
         img {
           width: 40%;
         }
@@ -136,5 +276,46 @@
   }
   .modal-content {
     width: min-content;
+  }
+}
+
+.footerMainWrapper {
+  .footerTitleWrapper {
+    .footerTitle {
+      font-weight: 700 !important;
+      text-transform: uppercase !important;
+    }
+  }
+  .footerTitleValuesWrapper {
+    .ios-image,
+    img {
+      height: 35px;
+      @media only screen and (min-width: 576px) {
+        height: 35px !important;
+      }
+      @media only screen and (min-width: 320px) {
+        height: 30px;
+      }
+    }
+    .followUsImage {
+      height: 50px;
+    }
+    .contactUsTitle {
+      font-size: 15px;
+      font-weight: 200;
+    }
+  }
+  .footerEndSectionStyle {
+    font-size: 14px;
+    color: #9c9b9a;
+  }
+  .appLinkText {
+    float: right;
+    @media only screen and (min-width: 576px) {
+      float: right !important;
+    }
+    @media only screen and (max-width: 576px) and (min-width: 320px) {
+      float: left;
+    }
   }
 }

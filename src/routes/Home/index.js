@@ -8,9 +8,9 @@ function Component() {
       <div className="homepage green_bg">
         <div className="container">
           <div className="row">
-            <div className="col-lg-12">
-              <div className="flex_container">
-                <div className="text_panel">
+            <div className="col-lg-12 col-md-12 col-sm-12">
+              <div className="row flex_container">
+                <div className="col-lg-8 col-md-6  col-sm-12 col-xs-12 text_panel">
                   <h2>Want to be heard?</h2>
                   <p>
                     In the world of social media, there are few mediums which
@@ -34,12 +34,20 @@ function Component() {
                     You can give your time to someone who wants to be heard.
                   </p>
                   <div className="clearfix">
-                    <a href="/get-android">
+                    <a href="/get-android" target="_blank">
                       <img src="https://lh3.googleusercontent.com/cjsqrWQKJQp9RFO7-hJ9AfpKzbUb_Y84vXfjlP0iRHBvladwAfXih984olktDhPnFqyZ0nu9A5jvFwOEQPXzv7hr3ce3QVsLN8kQ2Ao=s0" />
                     </a>
+                    <a href="/talk" className="ml-3">
+                      <img src="/images/lets-talk.png" />
+                    </a>
+                    {/* TODO: Add path to IOS instructions */}
+
+                    {/* <a href="https://www.youtube.com/" target="_blank">
+                      <img className="ios-img" src="/images/download-ios.png" />
+                    </a> */}
                   </div>
                 </div>
-                <div className="img_panel">
+                <div className="col-lg-4 col-md-6  col-sm-12  col-xs-12 img_panel">
                   <img src="/images/laptop_with_hand.png" />
                 </div>
               </div>
@@ -51,15 +59,15 @@ function Component() {
         <div className="container">
           <div className="row flex_container">
             <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-              <div className="text_img_panel">
-                <div className="text_panel">
+              <div className="row text_img_panel">
+                <div className="col-lg-12 col-md-12 col-sm-12 col xs-12 text_panel">
                   <h2>Chat & forget</h2>
                   <p>
                     We don't store any thing. Your conversations are delivered
                     to your buddy and forgotten.
                   </p>
                 </div>
-                <div className="img_panel">
+                <div className="col-lg-12 col-md-12 col-sm-12 col xs-12 img_panel">
                   <img src="/images/laptop_with_hand_1.png" />
                 </div>
               </div>
