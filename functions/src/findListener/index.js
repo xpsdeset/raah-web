@@ -8,7 +8,11 @@ async function findListenerEvent(snap, context) {
     params: { partnerId },
   } = context
 
-  notifyTele(`🙋 (${generateReqId(partnerId)}) wants to talk....`)
+  notifyTele(
+    `🙋 (${generateReqId(
+      partnerId
+    )}) wants to talk.. <a href="https://raah.app/talk">Connect with them?</a>`
+  )
 
   return null
 }

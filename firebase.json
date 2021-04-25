@@ -38,6 +38,11 @@
         "type": 302
       },
       {
+        "source": "/talk",
+        "destination": "https://raahtalk.web.app/",
+        "type": 302
+      },
+      {
         "source": "/get-android",
         "destination": "https://play.google.com/store/apps/details?id=com.raahteam.raahtheapp",
         "type": 302
