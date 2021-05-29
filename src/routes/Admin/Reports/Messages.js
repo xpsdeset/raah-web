@@ -20,6 +20,19 @@ let Msgs = ({ setRoom, roomId, reportUser, refId, ...props }) => {
 
   let roles = {}
 
+  if (!roomInfo)
+    return (
+      <div
+        class="alert alert-warning alert-dismissible fade show sticky-top"
+        role="alert"
+      >
+        <span>Chat expired</span>
+        <button type="button" class="close" onClick={close}>
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    )
+
   roles[roomInfo.listener] = "listener"
   roles[roomInfo.talker] = "talker"
 

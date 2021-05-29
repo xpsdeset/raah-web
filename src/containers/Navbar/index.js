@@ -22,7 +22,7 @@ function NavbarC() {
     <>
       {!authExists && (
         <section
-          class="
+          className="
           elementor-section
           elementor-top-section
           elementor-element
@@ -34,9 +34,9 @@ function NavbarC() {
           data-id="3f42f5e"
           data-element_type="section"
         >
-          <div class="elementor-container elementor-column-gap-default">
+          <div className="elementor-container elementor-column-gap-default">
             <div
-              class="
+              className="
               elementor-column
               elementor-col-50
               elementor-top-column
@@ -46,9 +46,9 @@ function NavbarC() {
               data-id="ee6a432"
               data-element_type="column"
             >
-              <div class="elementor-widget-wrap elementor-element-populated">
+              <div className="elementor-widget-wrap elementor-element-populated">
                 <div
-                  class="
+                  className="
                   elementor-element
                   elementor-element-80ba7bb
                   elementor-widget
@@ -58,13 +58,13 @@ function NavbarC() {
                   data-element_type="widget"
                   data-widget_type="image.default"
                 >
-                  <div class="elementor-widget-container">
+                  <div className="elementor-widget-container">
                     <a href="/">
                       <img
                         width="150"
                         height="150"
                         src="/images/logo1-150x150.png"
-                        class="attachment-thumbnail size-thumbnail"
+                        className="attachment-thumbnail size-thumbnail"
                         alt=""
                         loading="lazy"
                       />
@@ -74,7 +74,7 @@ function NavbarC() {
               </div>
             </div>
             <div
-              class="
+              className="
               elementor-column
               elementor-col-50
               elementor-top-column
@@ -84,9 +84,9 @@ function NavbarC() {
               data-id="8ef66a4"
               data-element_type="column"
             >
-              <div class="elementor-widget-wrap elementor-element-populated">
+              <div className="elementor-widget-wrap elementor-element-populated">
                 <div
-                  class="
+                  className="
                   elementor-element
                   elementor-element-fec4f26
                   elementor-shape-circle
@@ -98,11 +98,11 @@ function NavbarC() {
                   data-element_type="widget"
                   data-widget_type="social-icons.default"
                 >
-                  <div class="elementor-widget-container">
-                    <div class="ele-scl-icons-wrapper elementor-grid">
-                      <div class="elementor-grid-item">
+                  <div className="elementor-widget-container">
+                    <div className="ele-scl-icons-wrapper elementor-grid">
+                      <div className="elementor-grid-item">
                         <a
-                          class="
+                          className="
                           elementor-icon
                           ele-scl-icon
                           ele-scl-icon-facebook-f
@@ -111,13 +111,15 @@ function NavbarC() {
                           href="https://www.facebook.com/RaahTheApp"
                           target="_blank"
                         >
-                          <span class="elementor-screen-only">Facebook-f</span>
-                          <i class="fab fa-facebook-f"></i>
+                          <span className="elementor-screen-only">
+                            Facebook-f
+                          </span>
+                          <i className="fab fa-facebook-f"></i>
                         </a>
                       </div>
-                      <div class="elementor-grid-item mx-2">
+                      <div className="elementor-grid-item mx-2">
                         <a
-                          class="
+                          className="
                           elementor-icon
                           ele-scl-icon
                           ele-scl-icon-twitter
@@ -126,13 +128,13 @@ function NavbarC() {
                           href="https://twitter.com/raahtheapp"
                           target="_blank"
                         >
-                          <span class="elementor-screen-only">Twitter</span>
-                          <i class="fab fa-twitter"></i>
+                          <span className="elementor-screen-only">Twitter</span>
+                          <i className="fab fa-twitter"></i>
                         </a>
                       </div>
-                      <div class="elementor-grid-item">
+                      <div className="elementor-grid-item">
                         <a
-                          class="
+                          className="
                           elementor-icon
                           ele-scl-icon
                           ele-scl-icon-instagram
@@ -141,8 +143,10 @@ function NavbarC() {
                           target="_blank"
                           href="https://www.instagram.com/raahtheapp/"
                         >
-                          <span class="elementor-screen-only">Instagram</span>
-                          <i class="fab fa-instagram"></i>
+                          <span className="elementor-screen-only">
+                            Instagram
+                          </span>
+                          <i className="fab fa-instagram"></i>
                         </a>
                       </div>
                     </div>

@@ -15,9 +15,10 @@
     },
     "reports": {
       ".write": "auth != null",
-      ".read": "root.child('users/'+auth.uid).child('roles').hasChildren(['admin'])"
+      ".read": "root.child('users/'+auth.uid).hasChildren(['admin'])",
     },
     "rooms": {
+      ".read": "root.child('users/'+auth.uid).hasChildren(['admin'])",
       "$uid": {
         ".read": "auth != null && ($uid.contains(auth.uid) || root.child('users/'+auth.uid).child('roles').hasChildren(['admin']) )",
         ".write": "auth != null && ($uid.contains(auth.uid) || root.child('users/'+auth.uid).child('roles').hasChildren(['admin']) )"

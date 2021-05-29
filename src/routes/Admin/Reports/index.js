@@ -23,6 +23,7 @@ export default function Todos() {
   return (
     <div className="container">
       <h1>Reports</h1>
+      {room && <Messages {...{ ...room, setRoom, reportUser }} />}
       <Table>
         <thead>
           <tr>
@@ -51,7 +52,6 @@ export default function Todos() {
           })}
         </tbody>
       </Table>
-      {room && <Messages {...{ ...room, setRoom, reportUser }} />}
     </div>
   )
 }
