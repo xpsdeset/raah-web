@@ -39,7 +39,7 @@
       },
       {
         "source": "/talk",
-        "destination": "https://raahtalk.web.app/",
+        "destination": "https://talk.raah.app/",
         "type": 302
       },
       {

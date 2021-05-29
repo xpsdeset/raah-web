@@ -5,7 +5,7 @@ import createStore from "./store/createStore"
 import { version } from "../package.json"
 import App from "./containers"
 import "bootstrap/dist/css/bootstrap.min.css"
-import "./index.scss"
+import "./style.css"
 
 // import * as serviceWorker from './serviceWorker'
 
