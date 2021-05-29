@@ -47,14 +47,16 @@ let Msgs = ({ setRoom, roomId, reportUser, refId, ...props }) => {
         <p>
           Session Started at: <FormatDate date={roomInfo.sessionStarted} />
         </p>
-        {Object.keys(roomInfo.messages).map((d) => {
-          let msg = roomInfo.messages[d]
-          return (
-            <p key={d}>
-              {roles[msg.id]}:{msg.text}
-            </p>
-          )
-        })}
+        {!roomInfo.messages && <p>No messages</p>}
+        {roomInfo.messages &&
+          Object.keys(roomInfo.messages).map((d) => {
+            let msg = roomInfo.messages[d]
+            return (
+              <p key={d}>
+                {roles[msg.id]}:{msg.text}
+              </p>
+            )
+          })}
       </Modal.Body>
       <Modal.Footer>
         <Button variant="secondary" onClick={close}>
